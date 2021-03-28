@@ -1,0 +1,46 @@
+.header {
+    background-color: $green-malahit-color ;
+    
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    height: 50px;
+    border-radius: 7px;
+    margin-top: 3px;
+    
+}
+
+.header__button {
+    border:none;
+    background: none;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__navigation {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.header__item {
+    margin-bottom: 10px;
+}
+
+.header__link {
+    color: $green-malahit-color;
+    text-decoration: none;
+    @include font (14px,12px)
+}
+

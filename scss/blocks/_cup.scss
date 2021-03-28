@@ -1,0 +1,19 @@
+.cup {
+    display: flex;
+}
+
+.cup__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+}
+
+.cup__text {
+    font-weight: 400;
+    font-family: 'Reggae One';
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-image: url(../../img/background/cup.JPG);
+}
