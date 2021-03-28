@@ -26,12 +26,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .header__navigation {
     background-color: white;
     padding-top: 20px;
     padding-bottom: 10px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.header__button:hover, .header__button:focus {
+    opacity: 0.6;
 }
 
 .header__item {

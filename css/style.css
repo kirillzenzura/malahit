@@ -84,13 +84,13 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    width: 91.6%;
+    width: 95.6%;
   }
 }
 
 @media (max-width: 375px) {
   .container {
-    width: 91.4%;
+    width: 99%;
   }
 }
 
@@ -126,6 +126,13 @@ body {
   background-color: white;
   padding-top: 20px;
   padding-bottom: 10px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.header__button:hover, .header__button:focus {
+  opacity: 0.6;
 }
 
 .header__item {
@@ -143,6 +150,7 @@ body {
 
 .cup {
   display: flex;
+  position: relative;
 }
 
 .cup__img {
@@ -155,9 +163,24 @@ body {
 .cup__text {
   font-weight: 400;
   font-family: 'Reggae One';
+  font-size: 60px;
   width: 100%;
-  min-height: 400px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 45px;
+  justify-content: space-around;
   background-size: cover;
-  background-image: url(../../img/background/cup.JPG);
+  color: #41db2d;
+  background-image: url(../../img/background/cup-spoon.png);
+}
+
+@media (max-width: 375px) {
+  .cup__text {
+    align-items: center;
+    padding-left: 0;
+    background-image: url(../../img/background/cup-spoon-mobile.png);
+  }
 }
 /*# sourceMappingURL=style.css.map */

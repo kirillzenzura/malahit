@@ -27,10 +27,10 @@ body {
     }
 
     @include tablet {
-        width: 91.6%;
+        width: 95.6%;
     }
 
     @include mobile {
-        width: 91.4%;
+        width: 99%;
     }
 }
