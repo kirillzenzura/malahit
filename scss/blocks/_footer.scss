@@ -1,13 +1,58 @@
 .footer {
     background-color: $green-malahit-color ;
-    background-image: url(../../img/background/footer.JPG);
+    background-image: url(../img/background/footer.jpg);
     min-height: 200px;
     margin-top: 200px;
+    padding-top: 50px;
 }
 
 .footer__wrapper {
     flex: 0 0 auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer__list {
+        display: flex;
+        margin-top: 24px;
+        margin-bottom: 23px;
+    }
+    
+    .footer__copyright {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        color: $green-malahit-color;
+    }
+    
+    .footer__link {
+        margin-left: 7px;
+    }
+    
+    .footer__icon:hover, .footer__icon:focus {
+        fill: $green-malahit-color;
+    }
+    @include mobile {
+        flex-direction: column-reverse;
+    }
+}
+
+.footer__contacts {
+    text-decoration: none;
+    color: $green-malahit-color;
+    
+}
+
+.footer__email {
+    text-decoration: underline;
+}
+
+.footer__item {
+    margin-bottom: 20px;
 }

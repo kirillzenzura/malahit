@@ -262,15 +262,62 @@ body {
 
 .footer {
   background-color: rgba(9, 174, 65, 0.9);
-  background-image: url(../../img/background/footer.JPG);
+  background-image: url(../img/background/footer.jpg);
   min-height: 200px;
   margin-top: 200px;
+  padding-top: 50px;
 }
 
 .footer__wrapper {
   flex: 0 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__bottom .footer__list {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 23px;
+}
+
+.footer__bottom .footer__copyright {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(9, 174, 65, 0.9);
+}
+
+.footer__bottom .footer__link {
+  margin-left: 7px;
+}
+
+.footer__bottom .footer__icon:hover, .footer__bottom .footer__icon:focus {
+  fill: rgba(9, 174, 65, 0.9);
+}
+
+@media (max-width: 375px) {
+  .footer__bottom {
+    flex-direction: column-reverse;
+  }
+}
+
+.footer__contacts {
+  text-decoration: none;
+  color: rgba(9, 174, 65, 0.9);
+}
+
+.footer__email {
+  text-decoration: underline;
+}
+
+.footer__item {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
