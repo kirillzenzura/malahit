@@ -1,0 +1,13 @@
+.footer {
+    background-color: $green-malahit-color ;
+    background-image: url(../../img/background/footer.JPG);
+    min-height: 200px;
+    margin-top: 200px;
+}
+
+.footer__wrapper {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
